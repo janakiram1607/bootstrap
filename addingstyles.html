@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Layout and Grid</title>
+    <style>
+        body {
+            background: url('/images/pattern.png');
+        }
+
+        .row {
+            padding-top: 10px;
+        }
+
+        .row div {
+            background-color: rgba(255, 187, 0, 0.658);
+            border: 1px solid black;
+        }
+    </style>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h3>
+            working with default tag
+        </h3>
+        <div class="row">
+            <mark>This is mark tag</mark>
+            <small>This is small tag</small>
+            <em>This is em tag</em>
+            <u>This is u tag</u>
+            <s>This is s tag</s>
+            <strong>This is mark tag</strong>
+        </div>
+        <div class="row mt-3">
+            <p class="lead">This a p tag with class as lead</p>
+            <span class="text-decoration-underline">This is Text capitalize</span>
+            <p class="text-end text-white">This is Text capitalize</p>
+        </div>
+        
+        <span class="border">Border class added</span>
+        <span class="border-bottom">Border class added</span>
+        <span class="border border-primary">Border class added</span>
+
+        <div class="border border-primary bg-white rounded text-center p-4 my-4">
+            <h1>Working with styles</h1>
+        <p class="fst-italic"> This is the p tag under div </p>
+    </div>
+    </div>
+</body>
+<script src="/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</html>

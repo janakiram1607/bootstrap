@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Layout and Grid</title>
+    <style>
+        body {
+            background: url('/images/pattern.png');
+        }
+
+        .row {
+            padding-top: 10px;
+        }
+
+        .row div {
+            background-color: rgba(255, 187, 0, 0.658);
+            border: 1px solid black;
+        }
+    </style>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Element 1 of 2
+            </div>
+            <div class="col">
+                Element 2 of 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Element 1 of 3
+            </div>
+            <div class="col">
+                Element 2 of 3
+            </div>
+            <div class="col">
+                Element 3 of 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                Element 1 of 3
+            </div>
+            <div class="col-4">
+                Element 2 of 3
+            </div>
+            <div class="col-3">
+                Element 3 of 3
+            </div>
+        </div>
+        <!-- lg sm and md will take accordingly as per the size-->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-2">
+                Element 1 of 3
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-2">
+                Element 2 of 3
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-2">
+                Element 3 of 3
+            </div>
+        </div>
+        <!-- rol cols will take accordingly as per the size-->
+        <div class="row row-cols-6">
+            <div class="col">
+                Element 1
+            </div>
+            <div class="col">
+                Element 2
+            </div>
+            <div class="col">
+                Element 3
+            </div>
+            <div class="col">
+                Element 4
+            </div>
+            <div class="col">
+                Element 5
+            </div>
+            <div class="col">
+                Element 6
+            </div>
+            <div class="col">
+                Element 7
+            </div>
+            <div class="col">
+                Element 8
+            </div>
+        </div>
+        <!-- Nested row -->
+        <div class="row">
+            <div class="col-sm-4">
+                Element 1
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6">
+                    Element 1
+                    </div>
+                    <div class="col-sm-6">
+                        Element 1
+                        </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Offset -->
+        <div class="row">
+            <div class="col-md-4 Offset-lg-4">
+                Offset Element 1
+            </div>
+            <div class="col-md-4 Offset-xs-4">
+                Offset Element 2
+            </div>
+        </div>
+        <!-- Order -->
+        <div class="row">
+            <div class="col-md-2">
+                Order Element 1
+            </div>
+            <div class="col-md-4 order-5">
+                Order Element 2
+            </div>
+            <div class="col-md-6 order-1">
+                Order Element 2
+            </div>
+        </div>
+        <!-- Grid(Padding) -->
+        <div class="row gx-5">
+            <div class="col-md-4">
+                Grid Element 1
+            </div>
+            <div class="col-md-4">
+                Grid Element 2
+            </div>
+            <div class="col-md-4">
+                Grid Element 2
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</html>
